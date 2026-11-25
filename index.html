@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+       SEO — TROCAR: [NOME DA BARBEARIA] e [CIDADE - SP]
+       ============================================================ -->
+  <title>[NOME DA BARBEARIA] | Barbearia em [CIDADE - SP]</title>
+  <meta name="description" content="Corte degradê, barba na navalha e atendimento no horário marcado. Agende seu horário na [NOME DA BARBEARIA], em [CIDADE - SP].">
+  <meta name="theme-color" content="#0f0f0f">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__logo" data-cfg="nome">[NOME DA BARBEARIA]</a>
+
+      <nav class="nav__menu" id="menu" aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#" class="btn btn--gold btn--sm nav__cta" data-agendar>Agendar Agora</a>
+      </nav>
+
+      <button class="nav__toggle" id="toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <!-- TROCAR a foto de fundo do hero -->
+      <img class="hero__bg" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=75" alt="Barbeiro finalizando um corte na barbearia">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__place" data-cfg="cidade">[CIDADE - SP]</p>
+        <h1>Estilo, precisão e respeito em cada corte</h1>
+        <p class="hero__sub">Degradê na régua, barba na navalha e hora marcada respeitada. Chegue como está, saia pronto.</p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--gold" data-agendar>Agendar Horário</a>
+          <a href="#servicos" class="btn btn--ghost">Ver Serviços</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVIÇOS E PREÇOS =================
+         Para trocar preços/tempos, edite apenas os textos de cada <li>. -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <h2 class="section__title">Serviços e preços</h2>
+        <p class="section__lead">Tabela clara, sem surpresa na hora de pagar.</p>
+
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <h3>Corte Degradê / Social</h3><span class="leader"></span><span class="price">R$ 45</span>
+            </div>
+            <p>Máquina, tesoura e finalização com navalha. <em>40 min</em></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <h3>Barba Completa</h3><span class="leader"></span><span class="price">R$ 35</span>
+            </div>
+            <p>Modelagem, navalha e toalha quente. <em>30 min</em></p>
+          </li>
+          <li class="menu-item menu-item--hot">
+            <div class="menu-item__row">
+              <h3>Combo Corte + Barba</h3><span class="leader"></span><span class="price">R$ 70</span>
+            </div>
+            <p>O mais pedido da casa. Economize R$ 10. <em>70 min</em></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <h3>Sobrancelha na Navalha</h3><span class="leader"></span><span class="price">R$ 15</span>
+            </div>
+            <p>Limpeza e desenho discreto. <em>15 min</em></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <h3>Acabamento / Pezinho</h3><span class="leader"></span><span class="price">R$ 15</span>
+            </div>
+            <p>Mantenha o corte alinhado entre uma visita e outra. <em>15 min</em></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <h3>Hidratação / Selagem</h3><span class="leader"></span><span class="price">R$ 50</span>
+            </div>
+            <p>Controle de frizz e brilho para o cabelo. <em>30 min</em></p>
+          </li>
+        </ul>
+        <p class="note">Valores de exemplo. Consulte promoções e pacotes mensais pelo WhatsApp.</p>
+      </div>
+    </section>
+
+    <!-- ================= GALERIA =================
+         TROCAR as 6 fotos (src) e os textos alt. -->
+    <section class="section section--alt" id="galeria">
+      <div class="container">
+        <h2 class="section__title">Galeria de cortes</h2>
+        <p class="section__lead">Alguns trabalhos e um pouco do nosso ambiente.</p>
+
+        <div class="gallery">
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=70" alt="Corte degradê na máquina"></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=70" alt="Barba modelada com navalha"></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=70" alt="Cadeira de barbeiro no ambiente escuro"></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=70" alt="Detalhe de degradê"></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=70" alt="Barbeiro atendendo cliente"></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=800&q=70" alt="Acabamento na navalha"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DIFERENCIAIS ================= -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <h2 class="section__title">Por que escolher a <span data-cfg="nome">[NOME DA BARBEARIA]</span></h2>
+        <div class="features">
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l6 9-6 9M18 3l-6 9 6 9"/></svg>
+            <h3>Profissionais especializados</h3>
+            <p>Barbeiros com anos de prática em degradê, barba e navalha.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v9H4zM8 20h8M12 15v5M8 10h8"/></svg>
+            <h3>Ambiente climatizado e resenha</h3>
+            <p>Espaço confortável, música boa e café enquanto você espera.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <h3>Atendimento no horário marcado</h3>
+            <p>Seu tempo vale. Agendou, foi atendido, sem fila de espera.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LOCALIZAÇÃO E CONTATO ================= -->
+    <section class="section section--alt" id="localizacao">
+      <div class="container">
+        <h2 class="section__title">Localização e contato</h2>
+        <div class="location">
+          <div class="location__box">
+            <h3>Horário de atendimento</h3>
+            <ul class="hours" id="horarios"><!-- preenchido pelo script.js --></ul>
+          </div>
+          <div class="location__box">
+            <h3>Endereço</h3>
+            <address data-cfg="endereco">Rua Exemplo, 123 - Bairro</address>
+            <p class="city" data-cfg="cidade">[CIDADE - SP]</p>
+            <div class="location__actions">
+              <a href="#" class="btn btn--gold" data-link="maps" target="_blank" rel="noopener">Abrir no Google Maps</a>
+              <a href="#" class="btn btn--ghost" data-link="waze" target="_blank" rel="noopener">Abrir no Waze</a>
+              <a href="#" class="btn btn--ghost" data-wa target="_blank" rel="noopener">Chamar no WhatsApp</a>
+              <a href="#" class="btn btn--ghost" data-link="instagram" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= RODAPÉ (sem créditos) ================= -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="ano"></span> <span data-cfg="nome">[NOME DA BARBEARIA]</span> · <span data-cfg="cidade">[CIDADE - SP]</span></p>
+    </div>
+  </footer>
+
+  <!-- ================= WHATSAPP FLUTUANTE ================= -->
+  <a href="#" class="wa-float" data-wa target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M9 9.5c0 3 2.500 5.500 5.500 5.500l1.300-1.500-2-1-.8.800c-.8-.4-1.600-1.200-2-2l.8-.8-1-2z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
